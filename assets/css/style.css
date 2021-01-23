@@ -1,0 +1,289 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+body {
+  font-family: "Open-Sans", sans-serif;
+  letter-spacing: 2px;
+  padding-top: 100px;
+}
+
+.section-title{
+    color: red;
+    text-align: center;
+    font-size: 2rem;
+}
+
+hr{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.bottom-section-divider{
+    width: 10%;
+    height: 3px;
+    border-width: 0;
+    color: #6cba1f;
+    background-color: #ffdc14;
+}
+
+.section-icon{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.section-bg{
+    background-color: #dde5b6;
+}
+
+.section-break{
+    padding: 50px 0;
+}
+
+
+/*---- Header----*/
+
+.header {
+  margin: 0;
+}
+
+.bg-nav {
+  background-color: black;
+}
+
+.logo{
+    width:90px;
+    height:100px;
+    background-color:black;
+}
+
+.navbar-text {
+  color: red;
+  /*text-transform: uppercase;*/
+  font-size: 4vw;
+}
+
+
+.navbar-toggler {
+  color: red;
+  border-color: white;
+}
+
+.nav-link {
+  color: red;
+  font-size: 2vw;
+}
+
+.nav-link:hover {
+  color: #dcf406b9;
+  background: transparent;
+}
+
+/*---- Hero Image ----*/
+
+
+.hero-image {
+   
+    background: url("../images/hero-image1.jpg");   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+    
+}
+
+
+
+/*---- About Section ----*/
+
+
+.flags-image{
+    width: 100%;
+    height: auto;
+}
+
+.card-text-about{
+    padding: 10px;
+    color: red;
+}
+
+.card{
+    border: none;
+    margin-bottom: 20px;
+    color: red; 
+}
+
+
+/*---- Gallery Section ----*/
+  /*Aligning the images in the Gallery section and keeping them 
+  responsive with changes in screen size. Code found at
+  https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+.row-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 20px 0 20px;
+}
+
+.column-gallery {
+  -webkit-box-flex: 33.33%;
+      -ms-flex: 33.33%;
+          flex: 33.33%;
+  padding: 5px;
+}
+
+.zoom {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  -o-transition: transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s; 
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+/*---- Contact ----*/
+
+h3, h4{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+     color: red;
+}
+
+.btn-color{
+    color: red;
+    background-color: black;
+    margin-left: 15px;
+}
+
+.btn-color:hover {
+  color: #dcf406b9;
+}
+
+.form-contact:hover{
+    border-color: #dcf406b9; 
+}
+
+/*---- Styling found on Stackoverflow https://stackoverflow.com/questions/14820952/change-bootstrap-input-focus-blue-glow ----*/
+.form-control:focus {
+  border-color: #f8e238;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 8px 8px  rgba(108, 186, 31, 1);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 8px 8px  rgba(108, 186, 31, 1);
+}
+
+.contact{
+    padding: 10px;
+}
+
+/*---- Making the Google Maps iframe responsive found on w3schools.com https://www.w3schools.com/howto/howto_css_responsive_iframes.asp ----*/
+.iframe-container{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 45%;
+}
+
+.responsive-iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*---- Links ----*/
+
+.card-text{
+    padding: 10px;
+} 
+
+
+ .card i{
+    font-size: 30px;
+    margin-left:42%;
+}
+
+
+
+/*---- Footer ----*/
+
+.bg-footer{
+  background-color: rgba(108, 186, 31, 0.95);
+}
+
+
+.footer-text{
+  padding-top: 20px;
+  color: #ffdc14;
+}
+
+.footer-text p{
+   padding-left: 30px;
+   font-size: 14px;  
+}
+
+.footer-icons{
+   padding-right: 30px;
+   font-size: 20px;
+   text-align: right;
+}
+
+.footer-icons a {
+    color: #ffdc14;  
+}
+
+.footer-icons a:hover {
+   color: #dcf406b9;
+   background: transparent;
+}
+
+
+/*---- Media Queries ----*/
+@media (max-width: 768px) {
+  .navbar-text {
+    text-align: right;
+     font-size: 4vw;
+  }
+
+  .nav-link {
+   font-size: 3vw;
+}
+
+  .logo{
+    width: 70px;
+    height: 80px;
+}
+
+  .column-gallery {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    padding: 5px;
+}
+
+
+}
+
+@media (max-width: 576px){
+  .column-gallery {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    padding: 5px;
+}
+  .nav-link {
+   font-size: 4vw;
+}
+
+}
