@@ -86,25 +86,37 @@
             </div>
          </div>
       </section>
+      <section>
+          <div class="row justify-content-around">
+            <div class="card rounded shadow-lg" style="width: 18rem;">
+               <div class="card-body">
+                  <h4 class="card-title ">Game</h4>
+                  <i class="fas fa-plus"><span class="sr-only">Adding</span></i>
+                  <p class="card-text">
+                      
+                       value1 = <input type="text" id="value1" name="value1" value=""/>
+                      Answer = <input type="text" id="answer" name="answer" value=""/>
+                  </p>
+                  <input type="number" name="answer-box" value="" />
+                  <input type="button" name="Sumbit" value="Click here" onclick="javascript:addNumbers()"/>
+               </div>
+            </div>
+            </div>
+      </section>
 
       <div id="sums">
- value1 = <input type="text" id="value1" name="value1" value=""/>
+ 
         value2 = <input type="text" id="value2" name="value2" value=""/>
-        <input type="button" name="Sumbit" value="Click here" onclick="javascript:addNumbers()"/>
-        Answer = <input type="text" id="answer" name="answer" value=""/>
+        
+        
         
       </div>
 </body>
-  <script language="javascript">
-                function addNumbers()
-                {
-                    
-                        var val1 = Math.floor(Math.random() * 12) + 1;
-                    
-                        var val2 = Math.floor(Math.random() * 25);
-                       
-                        var ansD = document.getElementById("answer");
-                        ansD.value = val1 + val2;
-                }
-        </script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="assets/javascript/index.js" type="text/javascript"></script>
+  
+       
 </html>
