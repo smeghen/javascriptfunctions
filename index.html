@@ -19,11 +19,10 @@
                   <!--Club Logo-->
                   <img src="assets/images/logo1.png" class="d-inline-block logo" alt="Maths Games logo" loading="lazy">
                </a>
-               <span class="navbar-text"> </span>
                
                <!--  Nav Menu  -->
-               <div class=" navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav nav-menu-text flex-row justify-content-center">
+               
+                  <ul class="navbar-nav nav-menu-text flex-row">
                      <li class="nav-item p-2" data-toggle="collapse" data-target="#navbarNav">
                         <a class="nav-link" href="index.html">Home</a>
                      </li>
@@ -38,7 +37,7 @@
                      </li>
                 
                   </ul>
-               </div>
+               
             </nav>
          </div>
          <!-- End Navigation Bar  -->
@@ -87,5 +86,25 @@
             </div>
          </div>
       </section>
+
+      <div id="sums">
+ value1 = <input type="text" id="value1" name="value1" value=""/>
+        value2 = <input type="text" id="value2" name="value2" value=""/>
+        <input type="button" name="Sumbit" value="Click here" onclick="javascript:addNumbers()"/>
+        Answer = <input type="text" id="answer" name="answer" value=""/>
+        
+      </div>
 </body>
+  <script language="javascript">
+                function addNumbers()
+                {
+                    
+                        var val1 = Math.floor(Math.random() * 12) + 1;
+                    
+                        var val2 = Math.floor(Math.random() * 25);
+                       
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 + val2;
+                }
+        </script>
 </html>
