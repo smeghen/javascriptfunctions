@@ -88,17 +88,20 @@
       </section>
       <section>
           <div class="row justify-content-around">
-            <div class="card rounded shadow-lg" style="width: 18rem;">
+            <div class="card rounded shadow-lg" style="width: 40rem;">
                <div class="card-body">
                   <h4 class="card-title ">Game</h4>
                   <i class="fas fa-plus"><span class="sr-only">Adding</span></i>
                   <p class="card-text">
                       
-                       value1 = <input type="text" id="value1" name="value1" value=""/>
-                      Answer = <input type="text" id="answer" name="answer" value=""/>
+                      <h3 inline id="operand1"></h3>+<h3 id="operand2"></h3>=<h3 id="operand3"></h3>
+                      Answer = <input type="text" id="answer" name="answer-box" value=""/>
                   </p>
-                  <input type="number" name="answer-box" value="" />
-                  <input type="button" name="Sumbit" value="Click here" onclick="javascript:addNumbers()"/>
+                   <p class="card-text">
+                  Correct answer = <input type="number" name="answer" value="" />
+                  <input type="button" name="Submit" value="Start" onclick="javascript:addNumbers()"/>
+                   <input type="button" name="Submit" value="Answer" onclick="javascript:displayAdditionAnswer(operand3)"/>
+                  </p>
                </div>
             </div>
             </div>
@@ -106,7 +109,7 @@
 
       <div id="sums">
  
-        value2 = <input type="text" id="value2" name="value2" value=""/>
+        
         
         
         
