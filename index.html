@@ -48,7 +48,7 @@
         <i class="fas fa-divide section-icon"></i><i class="fas fa-minus-square section-icon"></i></h3>
         
          <div class="row justify-content-around">
-            <div class="card rounded shadow-lg" style="width: 18rem;">
+            <div class="card card-bg rounded shadow-lg" style="width: 18rem;">
                <div class="card-body">
                   <h4 class="card-title ">Addition</h4>
                   <i class="fas fa-plus"><span class="sr-only">Adding</span></i>
@@ -57,7 +57,7 @@
                   <a href="#" target="_blank" class="btn btn-color">Go</a>
                </div>
             </div>
-            <div class="card rounded shadow-lg" style="width: 18rem;">
+            <div class="card card-bg rounded shadow-lg" style="width: 18rem;">
                <div class="card-body">
                    <h4 class="card-title ">Subtraction</h4>
                   <i class="fas fa-minus"><span class="sr-only">Subtracting</span></i>
@@ -66,7 +66,7 @@
                   <a href="#" target="_blank" class="btn btn-color">Go</a>
                </div>
             </div>
-            <div class="card rounded shadow-lg" style="width: 18rem;">
+            <div class="card card-bg rounded shadow-lg" style="width: 18rem;">
                <div class="card-body">
                    <h4 class="card-title ">Multiplication</h4>
                   <i class="fas fa-times"><span class="sr-only">Multiplying</span></i>
@@ -75,7 +75,7 @@
                   <a href="#" target="_blank" class="btn btn-color">Go</a>
                </div>
             </div>
-            <div class="card rounded shadow-lg" style="width: 18rem;">
+            <div class="card card-bg rounded shadow-lg" style="width: 18rem;">
                <div class="card-body">
                   <h4 class="card-title">Division</h4>
                   <i class="fas fa-divide"><span class="sr-only">Dividing</span></i>
@@ -94,17 +94,22 @@
                   <i class="fas fa-plus"><span class="sr-only">Adding</span></i>
                   <p class="card-text">
                       
-                      <h3 inline id="operand1"></h3>+<h3 id="operand2"></h3>=<h3 id="operand3"></h3>
-                      Answer = <input type="text" id="answer" name="answer-box" value=""/>
-                  </p>
-                   <p class="card-text">
-                  Correct answer = <input type="number" name="answer" value="" />
-                  <input type="button" name="Submit" value="Start" onclick="javascript:addNumbers()"/>
-                   <input type="button" name="Submit" value="Answer" onclick="javascript:displayAdditionAnswer(operand3)"/>
+              <div class="inline" id="operand1">7</div>
+        <div class="inline" id="add">+</div>
+        <div class="inline" id="operand2">10</div>
+        <div class="inline" id="equal">=</div>
+        <div>
+            <input type="number" id="guess">
+        </div>
+        <div>
+            <button class="btn btn-color" id="btn">Go</button>
+        </div>
+        <div id="answer"></div>
                   </p>
                </div>
+               </div>
             </div>
-            </div>
+            
       </section>
 
       <div id="sums">

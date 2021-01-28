@@ -11,7 +11,8 @@ body {
     background-attachment: fixed;
   background-size: cover;
 }
-
+.inline {
+  float: left;}
 
 .section-title{
     color: red;
