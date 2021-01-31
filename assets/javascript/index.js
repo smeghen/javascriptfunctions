@@ -39,14 +39,14 @@ let correctAnswer = document.getElementById('answer');
 //check answer
 if (guess === total){
     
-    correctAnswer.innerHTML = `<p>Well done that is correct</p>`
+   alert("Correct! Well done.");
     
 } else {
     correctAnswer.innerHTML = `<p>Sorry correct answer is:  ${total}</p>`
     
 
 }
-window.location.reload()
+
     
        
   });
@@ -64,8 +64,7 @@ window.location.reload()
                         
     }
     function displayAdditionQuestion(operand1, operand2) {
-	document.getElementById("operand1").textContent = operand1;
-	document.getElementById("operand2").textContent = operand2;
+	
    
     };
 
