@@ -100,17 +100,18 @@
                     <i class="fas fa-plus"><span class="sr-only">Adding</span></i>
                     <p class="card-text">
 
-                    <div class="inline" id="operand1">7</div>
+                    <div class="inline" id="operand1"></div>
                     <div class="inline" id="add">+</div>
-                    <div class="inline" id="operand2">10</div>
+                    <div class="inline" id="operand2"></div>
                     <div class="inline" id="equal">=</div>
                     <div>
                         <input type="number" id="guess">
                     </div>
                     <div>
-                        <button class="btn btn-color" id="btn">Go</button>
+                        <button class="btn btn-color" id="btn">Enter</button>
+                        <button class="btn btn-color" id="start" onclick="clear()">Start</button>
                     </div>
-                    <div id="answer"></div>
+                    <div class="inline" id="operand3"></div>
                     </p>
                 </div>
             </div>
@@ -128,7 +129,7 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous"></script>
-<script src="assets/javascript/index.js" type="text/javascript"></script>
+<script src="assets/javascript/add.js" type="text/javascript"></script>
 
 
 </html>

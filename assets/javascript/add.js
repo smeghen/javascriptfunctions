@@ -1,34 +1,35 @@
-let num1 = parseInt(Math.random() * 12);
-let num2 = parseInt(Math.random() * 12);
-
-let guess = document.getElementById('guess').value;
-guess = Number(guess);
 
 
-function addNumbers(num1, num2) {
-    var total = num1 + num2;
-    return total;
+function addNumbers() {
+    let num1 = parseInt(document.getElementById("operand1").value);
+	let num2 = parseInt(document.getElementById("operand2").value);
+    return [num1 + num2];
+    
 }
 
 /*Need event listener to start game and display numbers
 will need a button for this*/
-function displayNumbers(firstNum, secondNum) {
+document.getElementById("start").addEventListener("click", displayNumbers);
+function displayNumbers(first, second) {
+    let firstNum = parseInt(Math.random() * 12);
+    let secondNum = parseInt(Math.random() * 12);
     document.getElementById("operand1").textContent = firstNum;
     document.getElementById("operand2").textContent = secondNum;
 }
 
-/*Need event listener to take guess and check
-Button to submit answer*/
-function displayAnswer() {
-    addNumbers(firstNum, secondNum);
-    document.getElementById("operand3").textContent = Ans;
-}
 
+document.getElementById("btn").addEventListener("click", checkAnswer);
 function checkAnswer() {
-    let guess = document.getElementById('guess').value;
+    let guess = parseInt(document.getElementById('guess').value);
     guess = Number(guess);
-    let calculatedAnswer = addNumbers();
-    if (guess === calculatedAnswer) {
+    let num1 = parseInt(document.getElementById("operand1").textContent);
+    num1 = Number(num1);
+    let num2 = parseInt(document.getElementById("operand2").textContent);
+    num2 = Number(num2);
+    let calculatedAnswer = num1 + num2;
+    let isCorrect = guess === calculatedAnswer;
+  
+    if (isCorrect) {
         alert("Hey! You got it right! :D");
         /*increment score*/
     } else {
@@ -36,5 +37,8 @@ function checkAnswer() {
         /*increment incorrect total*/
     }
 }
+function clear(){
+  		document.getElementById('guess').value = '';
+  }
 
 
