@@ -64,6 +64,21 @@ body {
     
 }
 
+.hero-text{
+    font-size: 3vw;
+    position: absolute;
+    display: inline-block;
+    left: 5vw;
+    top: 3vh;
+    text-align: center; 
+}
+
+.hero-text h2{
+    font-size: 5vw;
+  text-align: center;  
+
+}
+
 
 
 /*---- About Section ----*/
