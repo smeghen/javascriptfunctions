@@ -10,7 +10,7 @@ function addNumbers() {
 /*Need event listener to start game and display numbers
 will need a button for this*/
 document.getElementById("start").addEventListener("click", displayNumbers);
-function displayNumbers(first, second) {
+function displayNumbers() {
     let firstNum = parseInt(Math.random() * 12);
     let secondNum = parseInt(Math.random() * 12);
     document.getElementById("operand1").textContent = firstNum;
@@ -28,7 +28,8 @@ function checkAnswer() {
     num2 = Number(num2);
     let calculatedAnswer = num1 + num2;
     let isCorrect = guess === calculatedAnswer;
-  
+   
+
     if (isCorrect) {
         alert("Hey! You got it right! :D");
         /*increment score*/
@@ -36,9 +37,11 @@ function checkAnswer() {
         alert(`Sorry the correct answer is ${calculatedAnswer}!`);
         /*increment incorrect total*/
     }
+
+    
 }
-function clear(){
-  		document.getElementById('guess').value = '';
-  }
 
-
+ 
+function clear() {
+    document.getElementById("guess").reset();
+    }
