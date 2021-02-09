@@ -21,7 +21,7 @@ body {
 }
 
 .bg-nav {
-  background-color: red ;
+  background: transparent;
 }
 
 
@@ -50,17 +50,26 @@ body {
 
 /*---- Hero Image ----*/
 
+.jumbotron {
+    background-color: transparent;
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
 
 .hero-image {
    
     background: url("../images/numbers.jpg");   
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    min-height: 600px;
-    min-width: 1000px;
+        height: 100vh;
+    width: 100%;
     position: relative;
-    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 0;
     
 }
 
@@ -73,8 +82,8 @@ body {
     text-align: center; 
 }
 
-.hero-text h2{
-    font-size: 5vw;
+.jumbo-text{
+    color: black;
   text-align: center;  
 
 }
