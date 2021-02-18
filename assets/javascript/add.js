@@ -1,4 +1,21 @@
+/*Code found on w3schools to hide elements on click. Modified to hide game start button on click (https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp) */
 
+function hideStart() {
+  var startbutton = document.getElementById("start");
+  var enterbutton = document.getElementById("btn");
+  if (startbutton.style.display === "none") {
+    startbutton.style.display = "block";
+  } else {
+    startbutton.style.display = "none";
+  }
+  if (enterbutton.style.display === "block") {
+      enterbutton.style.display = "none";
+  }
+  else {
+      enterbutton.style.display = "block";
+  }
+
+}
 
 function addNumbers() {
     let num1 = parseInt(document.getElementById("operand1").value);
