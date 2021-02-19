@@ -16,6 +16,32 @@ function hideStart() {
   }
 
 }
+/*   https://mkyong.com/javascript/javascript-get-selected-value-from-dropdown-list/ */  
+function getGameType(){
+                var e = document.getElementById("gameType");
+                var result = e.options[e.selectedIndex].value;
+                
+                document.getElementById("result").innerHTML = result;
+            }
+
+function getTableNumber(){
+                var e = document.getElementById("tableNumber");
+                var result2 = e.options[e.selectedIndex].value;
+                
+                document.getElementById("result2").innerHTML = result2;
+            }            
+
+
+/*    https://codepen.io/kelsS/pen/pZBZog   */
+function hideModal() {
+  var gamesbutton = document.getElementById("infoModal").attributes;
+  if (gamesbutton['aria-hidden'].value == "false") {
+      document.getElementById("infoModal").setAttribute("aria-hidden", "true");
+  } else {
+    document.getElementById("infoModal").setAttribute("aria-hidden", "false");
+  }
+}
+
 
 function addNumbers() {
     let num1 = parseInt(document.getElementById("operand1").value);
