@@ -20,27 +20,24 @@ function hideStart() {
 function getGameType(){
                 var e = document.getElementById("gameType");
                 var result = e.options[e.selectedIndex].value;
-                
+                if (result === "Choose a Game to Play" ){
+                 document.getElementById("result").innerHTML = "Not valid input";
+                }
+                else{
                 document.getElementById("result").innerHTML = result;
+                }
             }
 
 function getTableNumber(){
                 var e = document.getElementById("tableNumber");
                 var result2 = e.options[e.selectedIndex].value;
-                
+                 if (result2 === "Choose the tables for the Game" ){
+                 document.getElementById("result2").innerHTML = "Not valid input";
+                }
+                else{                
                 document.getElementById("result2").innerHTML = result2;
+                }
             }            
-
-
-/*    https://codepen.io/kelsS/pen/pZBZog   */
-function hideModal() {
-  var gamesbutton = document.getElementById("infoModal").attributes;
-  if (gamesbutton['aria-hidden'].value == "false") {
-      document.getElementById("infoModal").setAttribute("aria-hidden", "true");
-  } else {
-    document.getElementById("infoModal").setAttribute("aria-hidden", "false");
-  }
-}
 
 
 function addNumbers() {
